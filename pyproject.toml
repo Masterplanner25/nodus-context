@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=80", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nodus-context"
+version = "0.1.0"
+description = "LLM context window management: token budget, compaction strategies, tool result guards"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{ name = "Masterplanner25" }]
+dependencies = []
+
+[project.optional-dependencies]
+tiktoken = ["tiktoken>=0.5.0"]
+test = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["nodus_context*"]
