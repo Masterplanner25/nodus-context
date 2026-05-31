@@ -6,15 +6,23 @@ build-backend = "setuptools.build_meta"
 name = "nodus-context"
 version = "0.1.0"
 description = "LLM context window management: token budget, compaction strategies, tool result guards"
+authors = [{ name = "Shawn Knight" }]
+license = { text = "MIT" }
+readme = "README.md"
 requires-python = ">=3.11"
-license = "MIT"
-authors = [{ name = "Masterplanner25" }]
 dependencies = []
 
 [project.optional-dependencies]
 tiktoken = ["tiktoken>=0.5.0"]
-test = ["pytest>=8.0"]
+dev = ["pytest>=8.0"]
+
+[project.urls]
+Homepage = "https://github.com/Masterplanner25/nodus-context"
+Repository = "https://github.com/Masterplanner25/nodus-context"
 
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["nodus_context*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
