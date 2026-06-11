@@ -7,7 +7,7 @@ Keeps agent conversations within finite LLM context windows without manual
 message pruning. No required external dependencies — token counting uses a
 word-count estimate by default; install `tiktoken` for accurate counts.
 
-> **Status:** v0.1.0 — prepared, not yet published.
+> **Status:** v0.1.0 — published on [PyPI](https://pypi.org/project/nodus-context/).
 
 ---
 
